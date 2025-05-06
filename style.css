@@ -1,0 +1,136 @@
+/* Fondo animado de estrellas */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #0f0f1c, #2c5364);
+    background-size: 400% 400%;
+    animation: movimientoFondo 20s ease infinite;
+    color: #fff;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Animación del fondo */
+@keyframes movimientoFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+/* Contenedor de navegación */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+/* Botones */
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.nav-btn {
+    background: #0a74da;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-btn:hover {
+    background: #1b98f5;
+    transform: translateY(-3px);
+}
+
+/* Iconos */
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Barra de búsqueda */
+.search-box {
+    margin-top: 10px;
+}
+
+#buscar {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Contenido principal */
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+/* Botón flotante WhatsApp */
+#contactoBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 0 10px #25d366);
+    transition: 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Animaciones */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
